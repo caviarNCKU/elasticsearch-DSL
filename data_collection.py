@@ -52,13 +52,7 @@ for field_name in field_name_list:
         writer.writeheader()
         a = {}
         for hit in s.scan():
-            temp = hit['@timestamp']
-            temp = temp[:-5]
-            date = datetime.datetime.strptime(temp, "%Y-%m-%dT%H:%M:%S")
-            timestamp = datetime.datetime.timestamp(date)
-            timestamp = timestamp + 28800
-            stamp_to_date = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%dT%H:%M:%S')            
-            a['timestamp'] = stamp_to_date
+            a['timestamp'] = hit['@timestamp'][:-6]
             hit = hit.to_dict()
             get_all_value(hit['system'][field_name],"",a)
             writer.writerow(a)
