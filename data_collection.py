@@ -8,7 +8,7 @@ ts = time.time()
 # UTC + 8
 ts = ts - 28800 
 st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%dT%H:%M:%S')
-ed = datetime.datetime.fromtimestamp(ts-600).strftime('%Y-%m-%dT%H:%M:%S')
+ed = datetime.datetime.fromtimestamp(ts-10).strftime('%Y-%m-%dT%H:%M:%S')
 st = st + ".000Z"
 ed = ed + ".000Z"
 print("end time: " + st)
