@@ -5,7 +5,7 @@
 * Collecting metricbeats index through elasticsearch-DSL.
 * Filter time range from current to 10s before.
 * Form .csv files according to different [system fields](https://www.elastic.co/guide/en/beats/metricbeat/current/exported-fields-system.html#_users) in Metricbeat.
-* [New] add [system fields](https://www.elastic.co/guide/en/beats/metricbeat/current/exported-fields-system.html#_users) in Metricbeat to field name.
+* **[New]** add [system fields](https://www.elastic.co/guide/en/beats/metricbeat/current/exported-fields-system.html#_users) information in Metricbeat to field name.
 
 ## Timestamp mismatch issue
 * Detail explanation of mismatch issue
